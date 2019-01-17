@@ -22,7 +22,7 @@ public class UserController {
 
     //查询数据
     @ApiOperation(notes = "实现传递参数，响应指定数量的数据",tags = {"数量","名次"},value = "获取名次接口")
-        @GetMapping("/datalist.do")
+    @GetMapping("/datalist.do")
     public List<String> query1(@ApiParam(value = "数量") int count){
         List<String> strs=new ArrayList<String>();
         for(int i=1;i<=count;i++){
